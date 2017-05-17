@@ -1,0 +1,11 @@
+{
+  "name": "kylegosen.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build-css": "node-sass --include-path scss stylesheets/style.scss public/css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "",
+  "license": "ISC"
+}
