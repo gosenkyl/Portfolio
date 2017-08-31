@@ -14,21 +14,22 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet">
 
     <!-- MATERIAL ICON FONT -->
-    <!link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
     <!-- FONT AWESOME -->
-    <!link href="stylesheets/font-awesome.min.css" rel="stylesheet">
+    <!--<link href="stylesheets/font-awesome.min.css" rel="stylesheet">-->
 
     <!-- ANIMATION -->
-    <!link href="stylesheets/animate.min.css" rel="stylesheet">
+    <!--<link href="stylesheets/animate.min.css" rel="stylesheet">-->
 
     <!-- MATERIALIZE -->
     <link href="public/css/materialize.min.css" rel="stylesheet">
     <!-- BOOTSTRAP -->
-    <!link href="stylesheets/bootstrap.min.css" rel="stylesheet">
+    <!--<link href="stylesheets/bootstrap.min.css" rel="stylesheet">-->
 
     <!-- CUSTOM STYLE -->
     <link href="public/css/style.css" rel="stylesheet">
 
+    <!-- GOOGLE MAPS -->
     <script src="public/javascript/map.js"></script>
 
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFNk-74gB60HbgKBwK-Wgr9Ax6qCGl1_o&callback=initMap"
@@ -68,19 +69,23 @@
             <div class="about card">
                 <div class="description">
                     Hello! I am a Software Developer from the Columbus area with experience
-                    in both front-end and back-end development. I am experienced with all stages of
-                    the software development lifecycle.
+                    in both front-end and back-end development.
+                    <br/><br/>
+                    I really enjoy watching Javascript
+                    frameworks evolve before our eyes, helping us bring a rich and vibrant experience
+                    to our users. Web development is not only my career, but a hobby as well - I love
+                    the instant gratification that comes with solving every day problems.
                 </div>
 
                 <div class="button-group">
-                    <div class="button">RESUME</div>
-                    <div class="button">CONTACT</div>
-                    <div class="button">HOBBIES</div>
+                    <div class="button" id="resume-button">RESUME</div>
+                    <div class="button" id="contact-button">CONTACT</div>
+                    <div class="button" id="hobbies-button">HOBBIES</div>
                 </div>
             </div>
         </div>
 
-        <div class="experience">
+        <div class="experience" id="resume">
 
             <div class="section-header">
                 <div class="experience-icon"></div>
@@ -92,14 +97,16 @@
                 <div class="half-container">
                     <div class="job card cardinal-health">
                         <span class="title">Full-Stack Software Engineer</span>
-                        <span class="company">Cardinal Health</span>
+                        <span class="company"><a href="http://www.cardinalhealth.com/en.html">Cardinal Health</a></span>
                         <span class="date">October 2016 - Present</span>
                         <div class="description">
                             Currently work in Cardinal Health's innovation lab (Fuse), connecting software to health care in order to help provide
                             a healthier life for our friends, family, neighbors and selves.
+
+                            Tech stack includes EmberJS on the front-end with a MySQL database
+                            and Spring Boot REST web services.
                         </div>
-                        <div class="technology">EmberJS, Java, Spring, Hibernate, MySQL, Gradle, HTML, SCSS, Jenkins, JIRA, Git</div>
-                        <span class="website"><a href="http://www.cardinalhealth.com/en.html">Company Website</a></span>
+                        <div class="technology">EmberJS, Java, Spring, REST, Hibernate, MySQL, Gradle, HTML, SCSS, Jenkins, JIRA, Git</div>
                     </div>
 
                     <div class="left-line"></div>
@@ -113,13 +120,12 @@
 
                     <div class="job card brooksource">
                         <span class="title">Full-Stack Software Engineer</span>
-                        <span class="company">Brooksource (Consultant to Cardinal Health)</span>
+                        <span class="company"><a href="https://www.brooksource.com/">Brooksource</a> (Consultant to Cardinal Health)</span>
                         <span class="date">February 2016 - October 2016</span>
                         <div class="description">
-
+                            Contract to hire. Hired full-time as soon as possible.
                         </div>
-                        <div class="technology">EmberJS, Java, Spring, Hibernate, MySQL, Gradle, HTML, SCSS, Jenkins, JIRA, Git</div>
-                        <span class="website"><a href="https://www.brooksource.com/">Company Website</a></span>
+                        <div class="technology">EmberJS, Java, Spring, REST, Hibernate, MySQL, Gradle, HTML, SCSS, Jenkins, JIRA, Git</div>
                     </div>
                 </div>
             </div>
@@ -129,14 +135,13 @@
                 <div class="half-container">
                     <div class="job card unisys">
                         <span class="title">Java Developer</span>
-                        <span class="company">Unisys</span>
+                        <span class="company"><a href="http://www.unisys.com/">Unisys</a></span>
                         <span class="date">June 2012 - February 2016</span>
                         <div class="description">
                             Worked on the Statewide Automated Child Welfare Information System for the state of Michigan.
 
                         </div>
-                        <div class="technology">Java, Struts, Hibernate, Oracle SQL, JSP, HTML, CSS, ClearQuest, ClearCase</div>
-                        <span class="website"><a href="http://www.unisys.com/">Company Website</a></span>
+                        <div class="technology">Java, Struts, Hibernate, Oracle PL/SQL, JSP, HTML, CSS, ClearQuest, ClearCase</div>
                     </div>
 
                     <div class="left-line"></div>
@@ -150,19 +155,18 @@
 
                     <div class="job card msu">
                         <span class="title">Computer Science</span>
-                        <span class="company">Michigan State University</span>
+                        <span class="company"><a href="https://msu.edu/">Michigan State University</a></span>
                         <span class="date">August 2009 - December 2012</span>
                         <div class="description">
                             Studied computer science in the college of engineering. Completed a senior capstone project
                             for TechSmith, integrating automated video and image capture into SnagIt and social media.
                         </div>
-                        <span class="website"><a href="https://msu.edu/">School Website</a></span>
                     </div>
                 </div>
             </div>
         </div> <!-- End EXPERIENCE -->
 
-        <div class="contact card margin-top-large">
+        <div class="contact card margin-top-large" id="contact">
             <div class="section-header">
                 <div class="contact-icon"></div>
                 <div>CONTACT</div>
@@ -217,7 +221,7 @@
             </div>
         </div>
 
-        <div class="hobbies card column margin-top-large">
+        <div class="hobbies card column margin-top-large" id="hobbies">
             <div class="section-header">
                 <div class="hobbies-icon"></div>
                 <div>HOBBIES</div>
@@ -236,6 +240,7 @@
                 </div>
 
                 <div class="row hobby-row">
+                    <div>Software Development</div>
                     <div>Bowling</div>
                     <div>Working Out</div>
                 </div>
@@ -249,6 +254,9 @@
 
     <script src="public/javascript/jquery.min.js"></script>
     <script src="public/javascript/materialize.min.js"></script>
+
+    <!-- OTHER JS -->
+    <script src="public/javascript/main.js"></script>
 
 </body>
 
